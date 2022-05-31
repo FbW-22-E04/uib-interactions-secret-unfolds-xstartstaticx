@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.flex-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  position: relative;
+}
+section {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  flex-wrap: wrap;
+  position: absolute;
+}
+h1 {
+  font-size: 7rem;
+  align-self: center;
+  margin: auto;
+  /* z-index: 2; */
+}
+.box {
+  width: 200px;
+  height: 200px;
+  transition-duration: 1s;
+  transition-delay: 0.5s;
+}
+.box--steelblue {
+  background-color: steelblue;
+}
+.box--dimgray {
+  background-color: dimgray;
+}
+.box--rosybrown {
+  background-color: rosybrown;
+  order: 1;
+}
+.box--yellow {
+  background-color: yellow;
+}
+.flex-container:hover .box--steelblue {
+  transform: translateX(-200px) rotate(90deg);
+}
+.flex-container:hover .box--dimgray {
+  transform: translateX(200px) rotate(-90deg);
+}
+.flex-container:hover .box--rosybrown {
+  transform: translateX(200px) rotate(90deg);
+}
+.flex-container:hover .box--yellow {
+  transform: translateX(-200px) rotate(-90deg);
+}
+/* BONUS */
+.box--blue {
+  background-color: blue;
+}
+.box--gray {
+  background-color: gray;
+}
+.box--gold {
+  background-color: gold;
+}
+.box--brown {
+  background-color: brown;
+}
+.flex-container:hover .box--blue,
+.flex-container:hover .box--gray,
+.flex-container:hover .box--gold,
+.flex-container:hover .box--brown {
+  transform: rotate(315deg);
+}
