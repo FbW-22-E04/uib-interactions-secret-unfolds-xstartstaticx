@@ -25,7 +25,7 @@ section {
   position: absolute;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 7rem;
   align-self: center;
   margin: auto;
   /* z-index: 2; */
@@ -60,4 +60,23 @@ h1 {
 }
 .flex-container:hover .box--yellow {
   transform: translateX(-200px) rotate(-90deg);
+}
+/* BONUS */
+.box--blue {
+  background-color: blue;
+}
+.box--gray {
+  background-color: gray;
+}
+.box--gold {
+  background-color: gold;
+}
+.box--brown {
+  background-color: brown;
+}
+.flex-container:hover .box--blue,
+.flex-container:hover .box--gray,
+.flex-container:hover .box--gold,
+.flex-container:hover .box--brown {
+  transform: rotate(315deg);
 }
