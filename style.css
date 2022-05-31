@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.flex-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  position: relative;
+}
+section {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  flex-wrap: wrap;
+  position: absolute;
+}
+h1 {
+  font-size: 5rem;
+  align-self: center;
+  margin: auto;
+  /* z-index: 2; */
+}
+.box {
+  width: 200px;
+  height: 200px;
+}
+.box--steelblue {
+  background-color: steelblue;
+}
+.box--dimgray {
+  background-color: dimgray;
+}
+.box--rosybrown {
+  background-color: rosybrown;
+}
+.box--yellow {
+  background-color: yellow;
+}
